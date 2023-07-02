@@ -12,4 +12,15 @@ class MessageControllerTest {
 
         assertEquals("Everything works as expected", defaultMessage);
     }
+
+    @Test
+    void setMessageTest() {
+        MessageController controller = new MessageController();
+        String shouldBeOk = controller.setMessage("new message");
+        String newMessage = controller.getMessage();
+
+        assertEquals("ok", shouldBeOk);
+        assertEquals("new message", newMessage);
+        assertNotEquals("Everything works as expected", newMessage);
+    }
 }
