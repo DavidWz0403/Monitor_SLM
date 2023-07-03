@@ -1,5 +1,6 @@
-package controller;
+package Controller;
 
+import Maintance_Monitor.Monitor_SLM.Controller.MessageController;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

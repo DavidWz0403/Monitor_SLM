@@ -1,4 +1,4 @@
-package Controller;
+package Maintance_Monitor.Monitor_SLM.Controller;
 
 
 import org.springframework.web.bind.annotation.*;
