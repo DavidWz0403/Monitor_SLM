@@ -1,4 +1,4 @@
-package Controller;
+package Maintance_Monitor.Monitor_SLM.Controller;
 
 import Maintance_Monitor.Monitor_SLM.Controller.MessageController;
 import org.junit.jupiter.api.Test;
