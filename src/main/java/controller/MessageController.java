@@ -1,6 +1,6 @@
 package controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 public class MessageController {
 
@@ -12,4 +12,11 @@ public class MessageController {
     public String getMessage() {
         return currentMessage != null ? currentMessage : defaultMessage;
     }
+
+    @GetMapping("/api/message/set")
+    public String setMessage(@RequestParam String m) {
+        this.currentMessage = m;
+        return "ok";
+    }
+
 }
